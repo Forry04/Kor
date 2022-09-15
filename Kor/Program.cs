@@ -11,6 +11,21 @@ namespace Kor
     {
         static void Main(string[] args)
         {
+            double sugar;
+
+            Console.Write("Kérem a kör sugarát: ");
+            string szoveg = Console.ReadLine();
+            sugar = Convert.ToDouble(szoveg);
+
+            double terulet, kerulet;
+
+            terulet = Math.Pow(sugar, 2) * Math.PI;
+            kerulet = 2 * sugar * Math.PI;
+            Console.WriteLine($" A kör területe: {terulet} ");
+            Console.WriteLine($" A kör kerülete: {kerulet} ");
+
+
+            Console.ReadKey();
         }
     }
 }
